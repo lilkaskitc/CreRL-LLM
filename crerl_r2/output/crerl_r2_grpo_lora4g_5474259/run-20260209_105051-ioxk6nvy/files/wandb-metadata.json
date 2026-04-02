@@ -1,0 +1,98 @@
+{
+  "os":  "Linux-5.15.0-168-generic-x86_64-with-glibc2.35",
+  "python":  "CPython 3.10.19",
+  "startedAt":  "2026-02-09T09:50:51.051063Z",
+  "program":  "/dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2/tmp_lora.py",
+  "codePath":  "tmp_lora.py",
+  "codePathLocal":  "tmp_lora.py",
+  "git":  {
+    "remote":  "https://github.com/huggingface/trl.git",
+    "commit":  "036ae820b3c8c57f352536015b97d5e987ee2a2c"
+  },
+  "email":  "lilkaskitc@hotmail.com",
+  "root":  "/dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2",
+  "host":  "mcml-hgx-h100-002",
+  "executable":  "/dss/dsshome1/08/ra95xob2/miniforge3/envs/trl/bin/python3.10",
+  "cpu_count":  48,
+  "cpu_count_logical":  96,
+  "gpu":  "NVIDIA H100",
+  "gpu_count":  4,
+  "disk":  {
+    "/":  {
+      "total":  "105089261568",
+      "used":  "25380753408"
+    }
+  },
+  "memory":  {
+    "total":  "811304550400"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA H100",
+      "memoryTotal":  "100485038080",
+      "cudaCores":  16896,
+      "architecture":  "Hopper",
+      "uuid":  "GPU-bd04eed4-2092-d8f2-6331-769f31321da7"
+    },
+    {
+      "name":  "NVIDIA H100",
+      "memoryTotal":  "100485038080",
+      "cudaCores":  16896,
+      "architecture":  "Hopper",
+      "uuid":  "GPU-40a323c0-2918-a980-dc59-55551692056e"
+    },
+    {
+      "name":  "NVIDIA H100",
+      "memoryTotal":  "100485038080",
+      "cudaCores":  16896,
+      "architecture":  "Hopper",
+      "uuid":  "GPU-1e1b1669-f453-fe35-50ea-82ee369b99df"
+    },
+    {
+      "name":  "NVIDIA H100",
+      "memoryTotal":  "100485038080",
+      "cudaCores":  16896,
+      "architecture":  "Hopper",
+      "uuid":  "GPU-591d8487-22d4-7569-10b4-585ae96bafe8"
+    }
+  ],
+  "cudaVersion":  "12.2",
+  "slurm":  {
+    "cluster_name":  "lrz",
+    "conf":  "/etc/slurm-llnl/slurm.conf",
+    "cpus_on_node":  "24",
+    "cpus_per_task":  "24",
+    "gpus_on_node":  "4",
+    "gtids":  "0",
+    "job_account":  "default",
+    "job_cpus_per_node":  "24",
+    "job_end_time":  "1770745336",
+    "job_gid":  "3647528",
+    "job_gpus":  "0,1,2,3",
+    "job_id":  "5474259",
+    "job_name":  "crerl_r2_grpo_lora4g_kl",
+    "job_nodelist":  "mcml-hgx-h100-002",
+    "job_num_nodes":  "1",
+    "job_partition":  "mcml-hgx-h100-94x4",
+    "job_qos":  "mcml",
+    "job_start_time":  "1770630136",
+    "job_uid":  "4425388",
+    "job_user":  "ra95xob2",
+    "jobid":  "5474259",
+    "localid":  "0",
+    "mem_per_node":  "65536",
+    "nnodes":  "1",
+    "nodeid":  "0",
+    "nodelist":  "mcml-hgx-h100-002",
+    "prio_process":  "0",
+    "procid":  "0",
+    "submit_dir":  "/dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2",
+    "submit_host":  "login-02",
+    "task_pid":  "1342168",
+    "tasks_per_node":  "1",
+    "topology_addr":  "mcml-hgx-h100-002",
+    "topology_addr_pattern":  "node",
+    "tres_per_task":  "cpu=24"
+  },
+  "writerId":  "9a4avsi4w9p9qrkopkoplj6of5chmxt3"
+}

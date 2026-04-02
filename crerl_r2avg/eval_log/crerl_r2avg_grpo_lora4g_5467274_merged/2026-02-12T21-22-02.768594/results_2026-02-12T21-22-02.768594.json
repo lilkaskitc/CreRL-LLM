@@ -1,0 +1,685 @@
+{
+  "config_general": {
+    "lighteval_sha": "?",
+    "num_fewshot_seeds": 1,
+    "max_samples": null,
+    "job_id": "0",
+    "start_time": 581698.346213121,
+    "end_time": 591811.607582477,
+    "total_evaluation_time_secondes": "10113.26136935607",
+    "model_config": {
+      "model_name": "/dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2avg/output/crerl_r2avg_grpo_lora4g_5467274_merged",
+      "generation_parameters": {
+        "num_blocks": null,
+        "block_size": null,
+        "early_stopping": null,
+        "repetition_penalty": null,
+        "frequency_penalty": null,
+        "length_penalty": null,
+        "presence_penalty": null,
+        "max_new_tokens": 1024,
+        "min_new_tokens": null,
+        "seed": null,
+        "stop_tokens": null,
+        "temperature": 0,
+        "top_k": null,
+        "min_p": null,
+        "top_p": null,
+        "truncate_prompt": null,
+        "cache_implementation": null,
+        "response_format": null
+      },
+      "system_prompt": null,
+      "cache_dir": "None",
+      "tokenizer": null,
+      "subfolder": null,
+      "revision": "main",
+      "batch_size": 16,
+      "max_length": 1536,
+      "model_loading_kwargs": {},
+      "add_special_tokens": true,
+      "skip_special_tokens": true,
+      "model_parallel": false,
+      "dtype": null,
+      "device": "cuda",
+      "trust_remote_code": false,
+      "compile": false,
+      "multichoice_continuations_start_space": null,
+      "pairwise_tokenization": false,
+      "continuous_batching": false,
+      "override_chat_template": null
+    },
+    "model_name": "/dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2avg/output/crerl_r2avg_grpo_lora4g_5467274_merged"
+  },
+  "results": {
+    "gsm8km|0": {
+      "extractive_match": 0.8074298711144806,
+      "extractive_match_stderr": 0.01086148386850993,
+      "maj@1": 0.8074298711144806,
+      "maj@1_stderr": 0.01086148386850993,
+      "acc@1": 0.8074298711144806,
+      "acc@1_stderr": 0.01086148386850993,
+      "f1_score": 0.8074298711144806,
+      "f1_score_stderr": 0.0003285404505812747
+    },
+    "amc23|0": {
+      "extractive_match": 0.35,
+      "extractive_match_stderr": 0.07637626158259733,
+      "maj@1": 0.35,
+      "maj@1_stderr": 0.07637626158259733,
+      "acc@1": 0.35,
+      "acc@1_stderr": 0.07637626158259733,
+      "f1_score": 0.35,
+      "f1_score_stderr": 0.0022462780638514367
+    },
+    "minervamath|0": {
+      "extractive_match": 0.20220588235294118,
+      "extractive_match_stderr": 0.024398192986654924,
+      "maj@1": 0.20220588235294118,
+      "maj@1_stderr": 0.024398192986654924,
+      "acc@1": 0.20220588235294118,
+      "acc@1_stderr": 0.024398192986654924,
+      "f1_score": 0.2022058823529412,
+      "f1_score_stderr": 0.0007735636252155672
+    },
+    "aime24m|0": {
+      "extractive_match": 0.03333333333333333,
+      "extractive_match_stderr": 0.033333333333333326,
+      "maj@1": 0.03333333333333333,
+      "maj@1_stderr": 0.033333333333333326,
+      "acc@1": 0.03333333333333333,
+      "acc@1_stderr": 0.033333333333333326,
+      "f1_score": 0.03333333333333333,
+      "f1_score_stderr": 0.0010455912388771193
+    },
+    "olympiadbench|0": {
+      "extractive_match": 0.2651851851851852,
+      "extractive_match_stderr": 0.017003316256376785,
+      "maj@1": 0.2651851851851852,
+      "maj@1_stderr": 0.017003316256376785,
+      "acc@1": 0.2651851851851852,
+      "acc@1_stderr": 0.017003316256376785,
+      "f1_score": 0.2651851851851852,
+      "f1_score_stderr": 0.000539769931303359
+    },
+    "aime25m|0": {
+      "extractive_match": 0.06666666666666667,
+      "extractive_match_stderr": 0.046320555585310084,
+      "maj@1": 0.06666666666666667,
+      "maj@1_stderr": 0.046320555585310084,
+      "acc@1": 0.06666666666666667,
+      "acc@1_stderr": 0.046320555585310084,
+      "f1_score": 0.06666666666666667,
+      "f1_score_stderr": 0.0014143535454429585
+    },
+    "math_500m|0": {
+      "extractive_match": 0.642,
+      "extractive_match_stderr": 0.021461434862859126,
+      "maj@1": 0.642,
+      "maj@1_stderr": 0.021461434862859126,
+      "acc@1": 0.642,
+      "acc@1_stderr": 0.021461434862859126,
+      "f1_score": 0.642,
+      "f1_score_stderr": 0.0006710822657524237
+    },
+    "all": {
+      "extractive_match": 0.3381172769503724,
+      "extractive_match_stderr": 0.032822082639377366,
+      "maj@1": 0.3381172769503724,
+      "maj@1_stderr": 0.032822082639377366,
+      "acc@1": 0.3381172769503724,
+      "acc@1_stderr": 0.032822082639377366,
+      "f1_score": 0.3381172769503724,
+      "f1_score_stderr": 0.0010027398744320197
+    }
+  },
+  "versions": {},
+  "config_tasks": {
+    "gsm8km|0": {
+      "name": "gsm8km",
+      "prompt_function": "gsm8k_prompt_fn",
+      "hf_repo": "zwhe99/gsm8k",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "extractive_match",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1)",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "maj@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MajorityAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "acc@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "AccuracyAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "f1_score",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "F1ScoreSample(base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "f1_corpus_level",
+          "batched_compute": false
+        }
+      ],
+      "solver": null,
+      "scorer": null,
+      "sample_fields": null,
+      "sample_to_fewshot": null,
+      "filter": null,
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "test"
+      ],
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 32768,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    },
+    "amc23|0": {
+      "name": "amc23",
+      "prompt_function": "amc23_prompt_fn",
+      "hf_repo": "zwhe99/amc23",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "extractive_match",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1)",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "maj@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MajorityAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "acc@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "AccuracyAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "f1_score",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "F1ScoreSample(base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "f1_corpus_level",
+          "batched_compute": false
+        }
+      ],
+      "solver": null,
+      "scorer": null,
+      "sample_fields": null,
+      "sample_to_fewshot": null,
+      "filter": null,
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "test"
+      ],
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 32768,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    },
+    "minervamath|0": {
+      "name": "minervamath",
+      "prompt_function": "minervamath_prompt_fn",
+      "hf_repo": "math-ai/minervamath",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "extractive_match",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)), ExprExtractionConfig(try_extract_without_anchor=True)), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1)",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "maj@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MajorityAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)), ExprExtractionConfig(try_extract_without_anchor=True)), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "acc@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "AccuracyAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)), ExprExtractionConfig(try_extract_without_anchor=True)), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "f1_score",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "F1ScoreSample(base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)), ExprExtractionConfig(try_extract_without_anchor=True)), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "f1_corpus_level",
+          "batched_compute": false
+        }
+      ],
+      "solver": null,
+      "scorer": null,
+      "sample_fields": null,
+      "sample_to_fewshot": null,
+      "filter": null,
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "test"
+      ],
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 32768,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    },
+    "aime24m|0": {
+      "name": "aime24m",
+      "prompt_function": "aime_prompt_fn",
+      "hf_repo": "HuggingFaceH4/aime_2024",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "extractive_match",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1)",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "maj@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MajorityAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "acc@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "AccuracyAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "f1_score",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "F1ScoreSample(base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "f1_corpus_level",
+          "batched_compute": false
+        }
+      ],
+      "solver": null,
+      "scorer": null,
+      "sample_fields": null,
+      "sample_to_fewshot": null,
+      "filter": null,
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train"
+      ],
+      "evaluation_splits": [
+        "train"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 32768,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    },
+    "olympiadbench|0": {
+      "name": "olympiadbench",
+      "prompt_function": "olympiadbench_prompt_fn",
+      "hf_repo": "zwhe99/simplerl-OlympiadBench",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "extractive_match",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)), ExprExtractionConfig(try_extract_without_anchor=True)), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1)",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "maj@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MajorityAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)), ExprExtractionConfig(try_extract_without_anchor=True)), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "acc@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "AccuracyAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)), ExprExtractionConfig(try_extract_without_anchor=True)), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "f1_score",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "F1ScoreSample(base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)), ExprExtractionConfig(try_extract_without_anchor=True)), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "f1_corpus_level",
+          "batched_compute": false
+        }
+      ],
+      "solver": null,
+      "scorer": null,
+      "sample_fields": null,
+      "sample_to_fewshot": null,
+      "filter": null,
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "test"
+      ],
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 32768,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    },
+    "aime25m|0": {
+      "name": "aime25m",
+      "prompt_function": "aime_prompt_fn",
+      "hf_repo": "yentinglin/aime_2025",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "extractive_match",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1)",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "maj@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MajorityAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "acc@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "AccuracyAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "f1_score",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "F1ScoreSample(base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "f1_corpus_level",
+          "batched_compute": false
+        }
+      ],
+      "solver": null,
+      "scorer": null,
+      "sample_fields": null,
+      "sample_to_fewshot": null,
+      "filter": null,
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train"
+      ],
+      "evaluation_splits": [
+        "train"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 32768,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    },
+    "math_500m|0": {
+      "name": "math_500m",
+      "prompt_function": "math_prompt_fn",
+      "hf_repo": "HuggingFaceH4/MATH-500",
+      "hf_subset": "default",
+      "metrics": [
+        {
+          "metric_name": "extractive_match",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1)",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "maj@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "MajorityAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "acc@1",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "AccuracyAtK(k=1, threshold=0.99, base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "mean",
+          "batched_compute": false
+        },
+        {
+          "metric_name": "f1_score",
+          "higher_is_better": true,
+          "category": "GENERATIVE",
+          "sample_level_fn": "F1ScoreSample(base_metric=MultilingualExtractiveMatchRobust(language=Language.ENGLISH, gold_extraction_target=(LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=55, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True)),), pred_extraction_target=(ExprExtractionConfig(try_extract_without_anchor=True), LatexExtractionConfig(try_extract_without_anchor=True, boxed_match_priority=0, normalization_config=NormalizationConfig(basic_latex=True, units=True, malformed_operators=True, nits=True, boxed='all', equations=True))), aggregation_function=max, fallback_mode=first_match, extraction_mode=any_match, precision=5, timeout_seconds=1))",
+          "corpus_level_fn": "f1_corpus_level",
+          "batched_compute": false
+        }
+      ],
+      "solver": null,
+      "scorer": null,
+      "sample_fields": null,
+      "sample_to_fewshot": null,
+      "filter": null,
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "test"
+      ],
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 32768,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "original_num_docs": -1,
+      "effective_num_docs": -1,
+      "must_remove_duplicate_docs": false,
+      "num_fewshots": 0,
+      "version": 2
+    }
+  },
+  "summary_tasks": {
+    "gsm8km|0": {
+      "hashes": {
+        "hash_examples": "65a51a3b4f4161c5",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "4c114b2c0a095f3b",
+        "hash_cont_tokens": "09127951621a0802"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    },
+    "amc23|0": {
+      "hashes": {
+        "hash_examples": "57f3ead69f601b6a",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "a25a083b8330b728",
+        "hash_cont_tokens": "7a652bd20e8b300b"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    },
+    "minervamath|0": {
+      "hashes": {
+        "hash_examples": "2380609739db80f4",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "bde1200584f067ae",
+        "hash_cont_tokens": "f6fbfddb337cde99"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    },
+    "aime24m|0": {
+      "hashes": {
+        "hash_examples": "ddec8fc79d0a014b",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "166e87696120913d",
+        "hash_cont_tokens": "ee0afd77c7cca51b"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    },
+    "olympiadbench|0": {
+      "hashes": {
+        "hash_examples": "96eebb759f237c57",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "f5d00734bad3335f",
+        "hash_cont_tokens": "81c86149055bc042"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    },
+    "aime25m|0": {
+      "hashes": {
+        "hash_examples": "76561f892edc3343",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "6c7c9e1c158b493d",
+        "hash_cont_tokens": "d39660c7463d716f"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    },
+    "math_500m|0": {
+      "hashes": {
+        "hash_examples": "adf0cc8311011db2",
+        "hash_full_prompts": "ef46db3751d8e999",
+        "hash_input_tokens": "a77e40570e38accc",
+        "hash_cont_tokens": "01bfa90fed664760"
+      },
+      "truncated": 0,
+      "non_truncated": 0,
+      "padded": 0,
+      "non_padded": 0
+    }
+  },
+  "summary_general": {
+    "hashes": {
+      "hash_examples": "e9a3db28e0b6088d",
+      "hash_full_prompts": "23222f8ea063f309",
+      "hash_input_tokens": "729548f8b7fb018b",
+      "hash_cont_tokens": "9fb60368c65aad93"
+    },
+    "truncated": 0,
+    "non_truncated": 0,
+    "padded": 0,
+    "non_padded": 0
+  }
+}

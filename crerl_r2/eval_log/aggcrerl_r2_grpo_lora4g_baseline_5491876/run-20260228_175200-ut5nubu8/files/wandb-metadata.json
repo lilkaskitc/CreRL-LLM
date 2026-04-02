@@ -1,0 +1,36 @@
+{
+  "os":  "Linux-5.15.0-161-generic-x86_64-with-glibc2.35",
+  "python":  "CPython 3.10.0",
+  "startedAt":  "2026-02-28T16:52:00.332725Z",
+  "args":  [
+    "--output_dir",
+    "./output_eval/aggcrerl_r2_grpo_lora4g_baseline_5491876",
+    "--wandb_project",
+    "lighteval",
+    "--wandb_run_name",
+    "eval_merged_aggcrerl_r2_grpo_lora4g_baseline_5491876"
+  ],
+  "program":  "/dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2/plot_eval_results.py",
+  "codePath":  "plot_eval_results.py",
+  "codePathLocal":  "plot_eval_results.py",
+  "git":  {
+    "remote":  "https://github.com/huggingface/trl.git",
+    "commit":  "036ae820b3c8c57f352536015b97d5e987ee2a2c"
+  },
+  "email":  "lilkaskitc@hotmail.com",
+  "root":  "/dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2",
+  "host":  "login-02",
+  "executable":  "/dss/dsshome1/08/ra95xob2/miniforge3/envs/eval/bin/python",
+  "cpu_count":  4,
+  "cpu_count_logical":  4,
+  "disk":  {
+    "/":  {
+      "total":  "107362648064",
+      "used":  "49508573184"
+    }
+  },
+  "memory":  {
+    "total":  "67387506688"
+  },
+  "writerId":  "nt48rv7s5lfyzlpr04ysl7c81lz23k7m"
+}

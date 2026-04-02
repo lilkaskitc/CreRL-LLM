@@ -1,0 +1,1 @@
+{"_runtime":708,"_timestamp":1.7663754052500584e+09,"_step":0,"gsm8k|0":{"extractive_match":0.22441243366186506,"extractive_match_stderr":0.011491617756630546},"all":{"extractive_match_stderr":0.011491617756630546,"extractive_match":0.22441243366186506},"_wandb":{"runtime":708}}

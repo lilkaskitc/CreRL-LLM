@@ -1,0 +1,57 @@
+# Model arguments
+#torch_dtype: bfloat16
+#attn_implementation: flash_attention_2
+#attn_implementation: kernels-community/flash-attn2  
+model_init_kwargs: {"attn_implementation": "kernels-community/flash-attn2",  "revision":"main"}
+
+# GRPO trainer config
+bf16: true
+use_vllm: true
+vllm_mode: colocate
+#vllm_device: auto
+vllm_gpu_memory_utilization: 0.4
+#vllm_enable_sleep_mode: True
+#eval_on_start: true
+do_eval: false
+#eval_strategy: steps
+#eval_steps: 10
+gradient_accumulation_steps: 2
+gradient_checkpointing: true
+gradient_checkpointing_kwargs: {use_reentrant: true}
+#hub_model_id: trl_tmp_fullsuite2
+#hub_strategy: every_save
+learning_rate: 4.0e-03
+#learning_rate: 1.5e-04
+#learning_rate: 1.5e-05
+log_completions: false
+log_level: info
+logging_first_step: true
+logging_steps: 1
+logging_strategy: steps
+lr_scheduler_type: cosine
+max_prompt_length: 512
+max_completion_length: 1024
+max_steps: 100
+num_generations: 8
+num_train_epochs: 1
+output_dir: ./output/aggcrerl_r2_grpo_lora4g_baseline
+overwrite_output_dir: true
+per_device_eval_batch_size: 24
+per_device_train_batch_size: 24
+push_to_hub: false
+report_to:
+- wandb
+run_name: aggcrerl_r2_grpo_lora4g_baseline
+reward_weights:
+- 1.0
+save_strategy: steps
+save_steps: 10
+seed: 42
+warmup_ratio: 0.1
+use_liger_kernel: True
+#ds3_gather_for_generation: False
+k_clusters: 2500
+top_freq_token: 5000
+use_rsllm: False
+load_best_model_at_end: false
+metric_for_best_model: accuracy_reward

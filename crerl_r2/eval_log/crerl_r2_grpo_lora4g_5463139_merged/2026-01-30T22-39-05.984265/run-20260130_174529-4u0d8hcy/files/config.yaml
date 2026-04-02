@@ -1,0 +1,113 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            owgip173ssf36n9uel69o2urwsydrhb5:
+                args:
+                    - accelerate
+                    - model_name=/dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2/output/crerl_r2_grpo_lora4g_5463139_merged,model_parallel=True,batch_size=16,max_length=1536,generation_parameters={max_new_tokens:1024},cache_dir=None
+                    - aime25m|0,aime24m|0,math_500m|0,minervamath|0,gsm8km|0,amc23|0,olympiadbench|0
+                    - --custom-tasks
+                    - ./trl/eval.py
+                    - --output-dir
+                    - ./output_eval/eval_crerl_r2_grpo_lora2g_5463139
+                    - --save-details
+                    - --wandb
+                cpu_count: 48
+                cpu_count_logical: 96
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "105089261568"
+                        used: "47980261376"
+                email: lilkaskitc@hotmail.com
+                executable: /dss/dsshome1/08/ra95xob2/miniforge3/envs/eval/bin/python3.10
+                git:
+                    commit: 036ae820b3c8c57f352536015b97d5e987ee2a2c
+                    remote: https://github.com/huggingface/trl.git
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-89a41356-e658-5a43-c2e0-43c013805c59
+                host: mcml-hgx-a100-017
+                memory:
+                    total: "1081818734592"
+                os: Linux-5.15.0-161-generic-x86_64-with-glibc2.35
+                program: -m lighteval.__main__
+                python: CPython 3.10.0
+                root: /dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2
+                slurm:
+                    cluster_name: lrz
+                    conf: /etc/slurm-llnl/slurm.conf
+                    cpus_on_node: "6"
+                    cpus_per_task: "6"
+                    gpus_on_node: "1"
+                    gtids: "0"
+                    job_account: default
+                    job_cpus_per_node: "6"
+                    job_end_time: "1769813004"
+                    job_gid: "3647528"
+                    job_gpus: "3"
+                    job_id: "5464690"
+                    job_name: eval_crerl_r2_grpo_lora2g_5463139
+                    job_nodelist: mcml-hgx-a100-017
+                    job_num_nodes: "1"
+                    job_partition: mcml-hgx-a100-80x4
+                    job_qos: mcml
+                    job_start_time: "1769791404"
+                    job_uid: "4425388"
+                    job_user: ra95xob2
+                    jobid: "5464690"
+                    localid: "0"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: mcml-hgx-a100-017
+                    nprocs: "6"
+                    ntasks: "6"
+                    prio_process: "0"
+                    procid: "0"
+                    submit_dir: /dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2
+                    submit_host: login-04
+                    task_pid: "2656494"
+                    tasks_per_node: "1"
+                    topology_addr: mcml-hgx-a100-017
+                    topology_addr_pattern: node
+                    tres_per_task: cpu=6
+                startedAt: "2026-01-30T16:45:29.176877Z"
+                writerId: owgip173ssf36n9uel69o2urwsydrhb5
+        m: []
+        python_version: 3.10.0
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+            "2":
+                - 1
+                - 5
+                - 11
+                - 33
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 84
+                - 100
+            "3":
+                - 2
+                - 13
+            "4": 3.10.0
+            "5": 0.23.1
+            "6": 4.57.3
+            "12": 0.23.1
+            "13": linux-x86_64

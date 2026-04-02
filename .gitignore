@@ -6,8 +6,8 @@
 *.log
 *~
 ~*
-_tmp*
-tmp*
+#_tmp*
+#tmp*
 tags
 
 # Byte-compiled / optimized / DLL files

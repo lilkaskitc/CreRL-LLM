@@ -1,0 +1,137 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            h7yobe0dqesiidj2hcrkfrfi3qy1djl2:
+                args:
+                    - accelerate
+                    - model_name=/dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl/output/crerl_grpo_lora4g_5443609_merged,model_parallel=True,batch_size=16,max_length=1536,generation_parameters={max_new_tokens:1024},cache_dir=None
+                    - aime25m|0,aime24m|0,math_500m|0,minervamath|0,gsm8km|0,amc23|0,olympiadbench|0
+                    - --custom-tasks
+                    - ./trl/eval.py
+                    - --output-dir
+                    - ./output_eval/eval_crerl_grpo_lora4g_custom
+                    - --save-details
+                    - --wandb
+                cpu_count: 48
+                cpu_count_logical: 96
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "105089261568"
+                        used: "27762081792"
+                email: lilkaskitc@hotmail.com
+                executable: /dss/dsshome1/08/ra95xob2/miniforge3/envs/eval/bin/python3.10
+                git:
+                    commit: 036ae820b3c8c57f352536015b97d5e987ee2a2c
+                    remote: https://github.com/huggingface/trl.git
+                gpu: NVIDIA H100
+                gpu_count: 2
+                gpu_nvidia:
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "100485038080"
+                      name: NVIDIA H100
+                      uuid: GPU-c10af094-07e8-86d7-607c-198a343cb646
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "100485038080"
+                      name: NVIDIA H100
+                      uuid: GPU-b07ab873-4097-eaeb-f357-e7bf6aee6df4
+                host: mcml-hgx-h100-016
+                memory:
+                    total: "811304828928"
+                os: Linux-5.15.0-161-generic-x86_64-with-glibc2.35
+                program: -m lighteval.__main__
+                python: CPython 3.10.0
+                root: /dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl
+                slurm:
+                    cluster_name: lrz
+                    conf: /etc/slurm-llnl/slurm.conf
+                    cpus_on_node: "12"
+                    cpus_per_task: "12"
+                    distribution: block
+                    gpus_on_node: "2"
+                    gtids: "0"
+                    job_account: default
+                    job_cpus_per_node: "12"
+                    job_end_time: "1768712086"
+                    job_gid: "3647528"
+                    job_gpus: 2,3
+                    job_id: "5447197"
+                    job_name: eval_crerl_grpo_lora4g_custom
+                    job_nodelist: mcml-hgx-h100-016
+                    job_num_nodes: "1"
+                    job_partition: mcml-hgx-h100-94x4
+                    job_qos: mcml
+                    job_start_time: "1768668886"
+                    job_uid: "4425388"
+                    job_user: ra95xob2
+                    jobid: "5447197"
+                    launch_node_ipaddr: 10.156.116.56
+                    localid: "0"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: mcml-hgx-h100-016
+                    nprocs: "12"
+                    ntasks: "12"
+                    prio_process: "0"
+                    procid: "0"
+                    pty_port: "62248"
+                    pty_win_col: "182"
+                    pty_win_row: "14"
+                    srun_comm_host: 10.156.116.56
+                    srun_comm_port: "62249"
+                    step_gpus: 0,1
+                    step_id: "0"
+                    step_launcher_port: "62249"
+                    step_nodelist: mcml-hgx-h100-008
+                    step_num_nodes: "1"
+                    step_num_tasks: "12"
+                    step_tasks_per_node: "12"
+                    stepid: "0"
+                    submit_dir: /dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl
+                    submit_host: mcml-hgx-h100-008
+                    task_pid: "4057116"
+                    tasks_per_node: "1"
+                    topology_addr: mcml-hgx-h100-016
+                    topology_addr_pattern: node
+                    tres_per_task: cpu=12
+                startedAt: "2026-01-17T16:56:23.951244Z"
+                writerId: h7yobe0dqesiidj2hcrkfrfi3qy1djl2
+        m: []
+        python_version: 3.10.0
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 30
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 95
+            "2":
+                - 1
+                - 5
+                - 11
+                - 30
+                - 33
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 84
+                - 95
+                - 100
+            "3":
+                - 2
+                - 13
+            "4": 3.10.0
+            "5": 0.23.1
+            "6": 4.57.3
+            "12": 0.23.1
+            "13": linux-x86_64

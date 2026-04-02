@@ -1,0 +1,116 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            746m4pz3xi446s4rjz7jishhlzg4dzl8:
+                args:
+                    - --merged_dir
+                    - /dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2avg/output_merged/aggcrerl_r2avg_grpo_lora4g_5496617
+                    - --wandb_project
+                    - lighteval
+                    - --wandb_run_name
+                    - eval_merged_aggcrerl_r2avg_grpo_lora4g_5496617
+                    - --wandb_api_key
+                    - 272f1b038ff8ae26ef5980d3a79e786f9631ee29
+                    - --eval_every
+                    - "10"
+                    - --tasks
+                    - aime25m|0,aime24m|0,math_500m|0,minervamath|0,gsm8km|0,amc23|0,olympiadbench|0
+                    - --output_dir
+                    - ./output_eval/aggcrerl_r2avg_grpo_lora4g_5496617
+                    - --batch_size
+                    - "16"
+                    - --max_length
+                    - "1536"
+                    - --max_new_tokens
+                    - "1024"
+                    - --skip_existing
+                codePath: eval_all_merged_checkpoints.py
+                codePathLocal: eval_all_merged_checkpoints.py
+                cpu_count: 48
+                cpu_count_logical: 96
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "105089261568"
+                        used: "26743767040"
+                email: lilkaskitc@hotmail.com
+                executable: /dss/dsshome1/08/ra95xob2/miniforge3/envs/eval/bin/python
+                git:
+                    commit: 036ae820b3c8c57f352536015b97d5e987ee2a2c
+                    remote: https://github.com/huggingface/trl.git
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-d17b911a-6eab-b29a-55fe-3b565847391f
+                host: mcml-hgx-a100-013
+                memory:
+                    total: "1081818341376"
+                os: Linux-5.15.0-170-generic-x86_64-with-glibc2.35
+                program: /dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2avg/eval_all_merged_checkpoints.py
+                python: CPython 3.10.0
+                root: /dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2avg
+                slurm:
+                    cluster_name: lrz
+                    conf: /etc/slurm-llnl/slurm.conf
+                    cpus_on_node: "6"
+                    cpus_per_task: "6"
+                    gpus_on_node: "1"
+                    gtids: "0"
+                    job_account: default
+                    job_cpus_per_node: "6"
+                    job_end_time: "1772788386"
+                    job_gid: "3647528"
+                    job_gpus: "0"
+                    job_id: "5500918"
+                    job_name: eval_all_merged_5496617
+                    job_nodelist: mcml-hgx-a100-013
+                    job_num_nodes: "1"
+                    job_partition: mcml-hgx-a100-80x4
+                    job_qos: mcml
+                    job_start_time: "1772615586"
+                    job_uid: "4425388"
+                    job_user: ra95xob2
+                    jobid: "5500918"
+                    localid: "0"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: mcml-hgx-a100-013
+                    prio_process: "0"
+                    procid: "0"
+                    submit_dir: /dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2avg
+                    submit_host: login-04
+                    task_pid: "3415455"
+                    tasks_per_node: "1"
+                    topology_addr: mcml-hgx-a100-013
+                    topology_addr_pattern: node
+                    tres_per_task: cpu=6
+                startedAt: "2026-03-04T09:13:23.300620Z"
+                writerId: 746m4pz3xi446s4rjz7jishhlzg4dzl8
+        m: []
+        python_version: 3.10.0
+        t:
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.10.0
+            "5": 0.23.1
+            "12": 0.23.1
+            "13": linux-x86_64
+batch_size:
+    value: 16
+eval_every:
+    value: 10
+max_length:
+    value: 1536
+max_new_tokens:
+    value: 1024
+merged_dir:
+    value: /dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2avg/output_merged/aggcrerl_r2avg_grpo_lora4g_5496617
+tasks:
+    value: aime25m|0,aime24m|0,math_500m|0,minervamath|0,gsm8km|0,amc23|0,olympiadbench|0

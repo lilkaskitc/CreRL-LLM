@@ -50,7 +50,7 @@ def parse_args():
     parser.add_argument(
         "--wandb_api_key",
         type=str,
-        default="272f1b038ff8ae26ef5980d3a79e786f9631ee29",
+        default="",
         help="WandB API key"
     )
     parser.add_argument(

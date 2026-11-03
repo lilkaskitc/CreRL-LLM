@@ -30,7 +30,6 @@ MERGED_DIR="${1:-/dss/dssmcmlfs01/pr74ze/pr74ze-dss-0001/ra95xob2/crerl_r2avg/ou
 # WandB configuration
 export WANDB_PROJECT=lighteval
 export WANDB_NAME="eval_merged_$(basename $MERGED_DIR)"
-export WANDB_API_KEY="272f1b038ff8ae26ef5980d3a79e786f9631ee29"
 export WANDB_START_METHOD=thread
 
 # Evaluate every N steps (e.g., every 10 steps)

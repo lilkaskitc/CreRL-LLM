@@ -5,7 +5,6 @@ from trl.rewards import accuracy_reward, think_format_reward
 from trl import GRPOTrainer, GRPOConfig, TrlParser
 from peft import LoraConfig
 import wandb
-wandb.login(key="272f1b038ff8ae26ef5980d3a79e786f9631ee29")
 
 train_dataset = load_dataset("DigitalLearningGmbH/MATH-lighteval", "default", split='train')
 

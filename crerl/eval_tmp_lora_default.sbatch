@@ -21,7 +21,6 @@ cd "$PROJECT_PATH"
 
 export WANDB_PROJECT=lighteval
 export WANDB_NAME=$SLURM_JOB_NAME
-export WANDB_API_KEY="272f1b038ff8ae26ef5980d3a79e786f9631ee29"
 export WANDB_START_METHOD=thread
 
 # 🔴 VERY IMPORTANT: avoid TorchDynamo bugs
